@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Home</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:growl id="messages" />
+		<h:graphicImage value="img/logo_teste.png" width="217" height="39"
+			id="logo" />
+		<p:menubar>
+			<p:menuitem value="Home" action="home.xhtml" />
+			<p:menuitem value="Cad Console" action="console.xhtml" />
+			<p:menuitem value="Cad Jogos" action="jogos.xhtml" />
+			<p:menuitem value="Galeria" url="galeria.xhtml" />
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Buscar" action="#{consoleMB.pesquisar}" />
+				<!--  <p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />  -->
+			</f:facet>
+		</p:menubar>      
+        
+        
+		<h:graphicImage value="img/home.jpg" width="800" height="300" id="home" />
+         
+		
+          
+	</h:form>
+</h:body>
+</html>
